@@ -20,3 +20,17 @@ for (const btn of btnRemove) {
     })
     
 }
+
+// validation checking 
+
+let inputMail = document.getElementById('input-mail');
+let submitBtn = document.getElementById('submit-btn');
+console.log(inputMail, submitBtn);
+inputMail.addEventListener('keyup', (e)=>{
+    let text = e.target.value;
+    if(text.indexOf('@') != 1){
+        submitBtn.disabled = false;
+    }else{
+        submitBtn.disabled = true;
+    }
+})
