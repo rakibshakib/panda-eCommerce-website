@@ -28,9 +28,9 @@ let submitBtn = document.getElementById('submit-btn');
 console.log(inputMail, submitBtn);
 inputMail.addEventListener('keyup', (e)=>{
     let text = e.target.value;
-    if(text.indexOf('@') != 1){
-        submitBtn.disabled = false;
+    if(text.indexOf('@gmail.com') != -1){
+        submitBtn.removeAttribute('disabled')
     }else{
-        submitBtn.disabled = true;
+        submitBtn.setAttribute('disabled', true)
     }
 })
