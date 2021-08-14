@@ -18,6 +18,7 @@
     padding: 10px 25px;
     cursor: pointer;
     color:#ffffff;
+    outline: none !important;
 }
 .cat{
     border-radius: 10px;
